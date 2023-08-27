@@ -1,0 +1,37 @@
+doctype html
+html
+  head
+    title Dance Website 
+    style
+      include style.css
+  body
+    nav#navbar
+
+      div#logo 
+        img#img(src="/static/pngegg.png", alt="Loading Error")|
+        p Beat Box Dance
+
+      ul
+        li #[a(href='/') Home ]
+        li #[a(href='/about') About] 
+        li #[a(href='/services') Services]
+        li #[a(href='/contact') Contact]
+
+    
+    section#introsection 
+      h1 Welcome To Beat Box Dance Academy
+      |Eat Sleep Dance Repeat 
+    section#sponsorsection 
+      h2 Our  Sponsors 
+      div#sponsors_container
+        img#adidas(src="/static/sponsor1.png", alt="sponsor") 
+        img(src="/static/sponsor2.png", alt="sponsor") 
+        img(src="/static/sponsor3.png", alt="sponsor") 
+        img(src="/static/sponsor6.png", alt="sponsor") 
+        img(src="/static/sponsor9.png", alt="sponsor") 
+    section#missionsection 
+      h2 Our  Mission
+      |Our mission is to instill a great love of dance, while inspiring self-confidence, discipline and respect of the performing arts.
+    footer#footer Copyright © 2023 bbdanceacademy.com | all copyright reserved
+    //- script
+    //-   include app.js
