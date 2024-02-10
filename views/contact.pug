@@ -1,0 +1,26 @@
+extends base.pug
+
+block scripts
+  script(src='index.js')
+
+block style
+    style
+        include style.css
+        include contact.css
+        
+
+block content 
+    div.contactcontainer
+        h1 Contact Us
+        form(action="/contact", method="post", class="form")
+            input(type="text", name="name" id="name", placeholder="Enter your name")
+            input(type="number", name="number", id="number", placeholder="Enter your phone number")
+            input(type="email", name="email",id="email", placeholder="Enter your email")
+            input(type="text", name="address",id="address",placeholder="Enter your address")
+            input(type="text", name="concern",id = "cencern",placeholder="Enter your concern")
+            button( onclick="message()") Submit 
+            //- div.message
+            //-     p#success Successfully Submitted 
+            //-     p#fail Fields Can't be Empty! 
+
+    
